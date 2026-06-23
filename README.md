@@ -24,7 +24,7 @@ All credit goes to the original creators. This repo just wires them together.
 
 **Hugging Face accounts are getting suspended for running this kind of always-on agent on free Spaces.** It is not hypothetical — people (myself included) have had Spaces flagged and accounts warned or suspended, sometimes with no warning and no usable appeal path.
 
-This project runs Hermes Agent, a WebUI, and a Cloudflare keep-alive worker specifically to defeat the free-tier sleep timer. That is exactly the pattern Hugging Face's trust & safety team has been flagging as abuse of free compute. Treat it accordingly:
+This project runs Hermes Agent, a WebUI, and a Cloudflare keep-alive worker specifically to defeat the free-tier sleep timer. Treat it accordingly:
 
 - **Do not deploy this on an account you cannot afford to lose.** Use a throwaway HF account, or pay for a Pro/Spaces Compute tier and follow their ToS. Do not put your main account, your models, your datasets, or your other Spaces at risk.
 - **Free-tier always-on hosting of a personal agent is against the spirit (and increasingly the letter) of HF's ToS.** The Cloudflare keep-alive worker in this repo exists to keep a free Space awake 24/7 — that is the part most likely to trigger a suspension.
